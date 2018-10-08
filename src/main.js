@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Father from './Father.vue'
-Vue.component('father-component', Father)
+import Child from './Child.vue'
+Vue.component('child-component', Child)
 new Vue({
   el: '#app',
   render: h => h(App)

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>This is from {{name}}</h3>
-    <father-component></father-component>
+    <child-component></child-component>
   </div>
 </template>
 
