@@ -1,7 +1,8 @@
 <template>
   <div>
-    <father-component></father-component>
-    <h3>this is from {{name}}</h3>
+    <father-component :response="response"></father-component>
+    <h3>this is from {{name}} Vue Component</h3>
+    <button @click="PassData">Say thank you Daddy</button>
   </div>
 </template>
 <script>
@@ -9,10 +10,14 @@
   export default {
     data: function(){
       return {
-        name: 'child'
+        name: 'child',
+        response: '!!No response!!!'
       }
     },
     methods:{
+      PassData(){
+        this.response = 'thank you Daddy'
+      }
     },
     components:{
       'father-component': Father

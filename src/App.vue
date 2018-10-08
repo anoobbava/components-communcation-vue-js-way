@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>This is from {{name}}</h3>
+    <h3>This is from {{name}} Component</h3>
     <child-component></child-component>
   </div>
 </template>
