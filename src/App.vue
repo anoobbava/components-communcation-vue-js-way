@@ -6,11 +6,16 @@
 </template>
 
 <script>
+  import Child from './Child.vue'
   export default {
     data: function(){
       return {
         name: 'App'
       }
+    },
+    methods:{},
+    components:{
+        childComponent: Child
     }
   }
 </script>
