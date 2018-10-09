@@ -1,6 +1,6 @@
 <template>
   <div>
-    <father-component :response="response"></father-component>
+    <father-component :MyResponse="response"></father-component>
     <h3>this is from {{name}} Vue Component</h3>
     <button @click="PassData">Say thank you Daddy</button>
   </div>
