@@ -7,7 +7,12 @@
 
 <script>
   export default{
-    props: ['MyResponse'],
+    props: {
+      MyResponse: {
+        type: String,
+        required: true
+      }
+    },
     data: function(){
       return {
         name: 'father'
