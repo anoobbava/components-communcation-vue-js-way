@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>this is from {{name}} Vue Component</h3>
-    <h3>From Son: {{MyResponse}}</h3>
+    <h3>From Son: {{reversePropsData()}}</h3>
   </div>
 </template>
 
@@ -14,6 +14,9 @@
       }
     },
     methods: {
+      reversePropsData(){
+        return this.MyResponse.split('').reverse().join('');
+      }
     },
     components: {
     }
